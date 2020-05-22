@@ -37,6 +37,10 @@
             socket.on('receivedMessage', function(message) {
                 renderMessage(message);
             });
+        
+            $(document).keypress(function(e) {
+                if(e.which == 13) $('#btn').click();
+            });
 
             $('#chat').submit(function(event) {
                 event.preventDefault();
