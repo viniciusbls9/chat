@@ -53,6 +53,9 @@
                         author: author,
                         message: message
                     };
+                    
+                    $('input[name=message]').val('');
+                    $('input[name=message]').focus('');
 
                     renderMessage(messageObject);
 
