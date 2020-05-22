@@ -43,3 +43,15 @@ html, body {
     border: 1px solid #ddd;
     padding: 20px;
   }
+
+  @media screen and (max-width: 600px) {
+    input {
+      width: 80%;
+    }
+    .messages {
+      width: 80%;
+    }
+    button {
+      width: 80%;
+    }
+  }
