@@ -28,11 +28,11 @@
                 $('.messages').append('<div class="message"><strong>'+ message.author +'</strong>: '+ message.message +'</div>');
             }
 
-            socket.on('previousMessage', function(message) {
-                for(message of message) {
-                    renderMessage(message);
-                }
-            });
+//             socket.on('previousMessage', function(message) {
+//                 for(message of message) {
+//                     renderMessage(message);
+//                 }
+//             });
 
             socket.on('receivedMessage', function(message) {
                 renderMessage(message);
